@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stingless Bees & Their Unique Honey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #FFF8E1 0%, #F6C90E 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .infographic {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: linear-gradient(135deg, #F6C90E, #D17B00);
+            padding: 30px;
+            border-radius: 15px;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M30 0l15 8.66v17.32L30 34.64 15 25.98V8.66L30 0zm0 5.77L20 11.54v11.54l10 5.77 10-5.77V11.54L30 5.77z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+            opacity: 0.3;
+        }
+        
+        .header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            position: relative;
+            z-index: 1;
+            opacity: 0.9;
+        }
+        
+        .section {
+            margin-bottom: 35px;
+            background: #FFF8E1;
+            border-radius: 15px;
+            padding: 25px;
+            position: relative;
+            border-left: 5px solid #F6C90E;
+        }
+        
+        .section:nth-child(even) {
+            background: linear-gradient(135deg, #FFF8E1, #F6C90E15);
+            border-left-color: #D17B00;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .section-icon {
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .section h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #6B4F1D;
+            margin: 0;
+        }
+        
+        .bullet-point {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            padding: 8px 0;
+        }
+        
+        .bullet-point:last-child {
+            margin-bottom: 0;
+        }
+        
+        .hexagon-bullet {
+            width: 12px;
+            height: 12px;
+            margin-right: 12px;
+            margin-top: 4px;
+            flex-shrink: 0;
+        }
+        
+        .bullet-text {
+            flex: 1;
+            font-size: 0.95rem;
+            color: #444;
+        }
+        
+        .highlight {
+            color: #D17B00;
+            font-weight: 600;
+        }
+        
+        .number-highlight {
+            background: #F6C90E;
+            color: #6B4F1D;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        
+        .brands {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+        
+        .brand {
+            background: #4A7C59;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+            
+            .section h2 {
+                font-size: 1.3rem;
+            }
+            
+            .brands {
+                flex-direction: column;
+            }
+            
+            .brand {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="infographic">
+        <div class="header">
+            <h1>Stingless Bees (Meliponini)</h1>
+            <p>& Their Unique Honey</p>
+        </div>
+        
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" alt="Bee icon">
+                        <circle cx="20" cy="20" r="18" fill="#F6C90E" stroke="#D17B00" stroke-width="2"/>
+                        <ellipse cx="20" cy="16" rx="12" ry="8" fill="#6B4F1D"/>
+                        <ellipse cx="20" cy="24" rx="10" ry="6" fill="#6B4F1D"/>
+                        <circle cx="16" cy="14" r="2" fill="white"/>
+                        <circle cx="24" cy="14" r="2" fill="white"/>
+                        <path d="M8 18 L12 15 L12 21 Z" fill="#4A7C59"/>
+                        <path d="M32 18 L28 15 L28 21 Z" fill="#4A7C59"/>
+                    </svg>
+                </div>
+                <h2>Who Are Stingless Bees?</h2>
+            </div>
+            <div class="bullet-point">
+                <svg class="hexagon-bullet" viewBox="0 0 12 12">
+                    <polygon points="6,1 10,3.5 10,8.5 6,11 2,8.5 2,3.5" fill="#F6C90E"/>
+                </svg>
+                <div class="bullet-text">Over <span class="number-highlight">460 species</span> worldwide in tropical/subtropical regions</div>
+            </div>
+            <div class="bullet-point">
+                <svg class="hexagon-bullet" viewBox="0 0 12 12">
+                    <polygon points="6,1 10,3.5 10,8.5 6,11 2,8.5 2,3.5" fill="#F6C90E"/>
+                </svg>
+                <div class="bullet-text">Small, <span class="highlight">non-stinging</span> bees with unique defense mechanisms</div>
+            </div>
+            <div class="bullet-point">
+                <svg class="hexagon-bullet" viewBox="0 0 12 12">
+                    <polygon points="6,1 10,3.5 10,8.5 6,11 2,8.5 2,3.5" fill="#F6C90E"/>
+                </svg>
+                <div class="bullet-text">Important pollinators and <span class="highlight">ancient honey producers</span></div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" alt="Honey jar icon">
+                        <rect x="8" y="12" width="24" height="20" rx="2" fill="#F6C90E"/>
+                        <rect x="10" y="14" width="20" height="16" fill="#D17B00"/>
+                        <rect x="14" y="8" width="12" height="6" rx="3" fill="#6B4F1D"/>
+                        <circle cx="20" cy="11" r="1" fill="#4A7C59"/>
+                        <path d="M12 18 Q20 22 28 18 Q20 26 12 18" fill="#F6C90E" opacity="0.7"/>
+                    </svg>
+                </div>
+                <h2>Stingless Bee Honey Characteristics</h2>
+            </div>
+            <div class="bullet-point">
+                <svg class="hexagon-bullet" viewBox="0 0 12 12">
+                    <polygon points="6,1 10,3.5 10,8.5 6,11 2,8.5 2,3.5" fill="#D17B00"/>
+                </svg>
+                <div class="bullet-text"><span class="highlight">Thinner, higher water content</span> than regular honey</div>
+            </div>
+            <div class="bullet-point">
+                <svg class="hexagon-bullet" viewBox="0 0 12 12">
+                    <polygon points="6,1 10,3.5 10,8.5 6,11 2,8.5 2,3.5" fill="#D17B00"/>
+                </svg>
+                <div class="bullet-text"><span class="highlight">Tangy, sour-sweet flavor</span> with floral notes</div>
+            </div>
+            <div class="bullet-point">
+                <svg class="hexagon-bullet" viewBox="0 0 12 12">
+                    <polygon points="6,1 10,3.5 10,8.5 6,11 2,8.5 2,3.5" fill="#D17B00"/>
+                </svg>
+                <div class="bullet-text">Color: <span class="highlight">golden to amber</span></div>
+            </div>
+            <div class="bullet-point">
+                <svg class="hexagon-bullet" viewBox="0 0 12 12">
+                    <polygon points="6,1 10,3.5 10,8.5 6,11 2,8.5 2,3.5" fill="#D17B00"/>
+                </svg>
+                <div class="bullet-text">Rapid crystallization, <span class="highlight">creamy texture</span></div>
+            </div>
+            <div class="bullet-point">
+                <svg class="hexagon-bullet" viewBox="0 0 12 12">
+                    <polygon points="6,1 10,3.5 10,8.5 6,11 2,8.5 2,3.5" fill="#D17B00"/>
+                </svg>
+                <div class="bullet-text">Contains rare sugar <span class="highlight">trehalulose</span> (low glycemic index, stable, slow digestion)</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" alt="Honey production icon">
+                        <polygon points="20,2 30,8 30,22 20,28 10,22 10,8" fill="#F6C90E" stroke="#D17B00" stroke-width="2"/>
+                        <polygon points="20,6 26,9 26,19 20,22 14,19 14,9" fill="#D17B00"/>
+                        <circle cx="20" cy="14" r="3" fill="#6B4F1D"/>
+                        <path d="M16 32 L24 32 L22 36 L18 36 Z" fill="#4A7C59"/>
+                    </svg>
+                </div>
+                <h2>Honey Production & Rarity</h2>
+            </div>
+            <div class="bullet-point">
+                <svg class="hexagon-bullet" viewBox="0 0 12 12">
+                    <polygon points="6,1 10,3.5 10,8.5 6,11 2,8.5 2,3.5" fill="#4A7C59"/>
+                </svg>
+                <div class="bullet-text">Stingless bees produce <span class="number-highlight">~1–4 kg/year</span> per hive</div>
+            </div>
+            <div class="bullet-point">
+                <svg class="hexagon-bullet" viewBox="0 0 12 12">
+                    <polygon points="6,1 10,3.5 10,8.5 6,11 2,8.5 2,3.5" fill="#4A7C59"/>
+                </svg>
+                <div class="bullet-text">European honey bees produce <span class="number-highlight">~20–75 kg/year</span> per hive</div>
+            </div>
+            <div class="bullet-point">
+                <svg class="hexagon-bullet" viewBox="0 0 12 12">
+                    <polygon points="6,1 10,3.5 10,8.5 6,11 2,8.5 2,3.5" fill="#4A7C59"/>
+                </svg>
+                <div class="bullet-text">Honey stored in <span class="highlight">small resin pots</span>, not large combs</div>
+            </div>
+            <div class="bullet-point">
+                <svg class="hexagon-bullet" viewBox="0 0 12 12">
+                    <polygon points="6,1 10,3.5 10,8.5 6,11 2,8.5 2,3.5" fill="#4A7C59"/>
+                </svg>
+                <div class="bullet-text"><span class="highlight">Labor-intensive harvesting</span> → rarity and higher price</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" alt="Health benefits icon">
+                        <circle cx="20" cy="20" r="16" fill="#4A7C59"/>
+                        <path d="M20 8 L24 16 L20 12 L16 16 Z" fill="white"/>
+                        <circle cx="20" cy="20" r="8" fill="none" stroke="white" stroke-width="2"/>
+                        <path d="M15 20 L18 23 L25 16" stroke="white" stroke-width="2" fill="none"/>
+                    </svg>
+                </div>
+                <h2>Health Benefits</h2>
+            </div>
+            <div class="bullet-point">
+                <svg class="hexagon-bullet" viewBox="0 0 12 12">
+                    <polygon points="6,1 10,3.5 10,8.5 6,11 2,8.5 2,3.5" fill="#4A7C59"/>
+                </svg>
+                <div class="bullet-text"><span class="highlight">Antibacterial, antioxidant, anti-inflammatory</span> properties</div>
+            </div>
+            <div class="bullet-point">
+                <svg class="hexagon-bullet" viewBox="0 0 12 12">
+                    <polygon points="6,1 10,3.5 10,8.5 6,11 2,8.5 2,3.5" fill="#4A7C59"/>
+                </svg>
+                <div class="bullet-text">Contains <span class="highlight">organic acids, phenolic compounds</span></div>
+            </div>
+            <div class="bullet-point">
+                <svg class="hexagon-bullet" viewBox="0 0 12 12">
+                    <polygon points="6,1 10,3.5 10,8.5 6,11 2,8.5 2,3.5" fill="#4A7C59"/>
+                </svg>
+                <div class="bullet-text"><span class="highlight">Trehalulose</span> supports blood sugar control and dental health</div>
+            </div>
+            <div class="bullet-point">
+                <svg class="hexagon-bullet" viewBox="0 0 12 12">
+                    <polygon points="6,1 10,3.5 10,8.5 6,11 2,8.5 2,3.5" fill="#4A7C59"/>
+                </svg>
+                <div class="bullet-text">Traditional medicine uses for <span class="highlight">wounds, digestion, immunity</span></div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" alt="Shopping icon">
+                        <rect x="6" y="12" width="28" height="20" rx="2" fill="#F6C90E"/>
+                        <rect x="8" y="14" width="24" height="16" fill="white"/>
+                        <circle cx="14" cy="30" r="3" fill="#6B4F1D"/>
+                        <circle cx="26" cy="30" r="3" fill="#6B4F1D"/>
+                        <path d="M10 6 L12 6 L14 12 L30 12" stroke="#D17B00" stroke-width="2" fill="none"/>
+                        <rect x="12" y="18" width="16" height="8" fill="#F6C90E"/>
+                    </svg>
+                </div>
+                <h2>Where to Find Stingless Bee Honey?</h2>
+            </div>
+            <div class="bullet-point">
+                <svg class="hexagon-bullet" viewBox="0 0 12 12">
+                    <polygon points="6,1 10,3.5 10,8.5 6,11 2,8.5 2,3.5" fill="#6B4F1D"/>
+                </svg>
+                <div class="bullet-text">Popular brands worldwide:</div>
+            </div>
+            <div class="brands">
+                <span class="brand">WeFa Honey (Malaysia)</span>
+                <span class="brand">Tetra Native Bees (Australia)</span>
+                <span class="brand">Mulubee (Malaysia)</span>
+                <span class="brand">Madbees (Malaysia)</span>
+                <span class="brand">Wayanaden (India)</span>
+                <span class="brand">Indic Organics (India)</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
